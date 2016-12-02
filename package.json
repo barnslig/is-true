@@ -1,0 +1,41 @@
+{
+  "name": "is-true",
+  "version": "1.0.0",
+  "description": "Returns true if the given value is true. Otherwise false.",
+  "main": "index.js",
+  "files": [
+    "is-true.dist.js"
+  ],
+  "scripts": {
+    "build": "browserify index.js -o is-true.dist.js --standalone isTrue -t babelify",
+    "lint": "eslint index.js",
+    "test": "mocha --compilers js:babel-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barnslig/is-true.git"
+  },
+  "keywords": [
+    "boolean",
+    "check",
+    "is",
+    "value"
+  ],
+  "author": "Leonard Techel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barnslig/is-true/issues"
+  },
+  "homepage": "https://github.com/barnslig/is-true#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.1",
+    "eslint": "^3.11.1",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.16.0"
+  }
+}
