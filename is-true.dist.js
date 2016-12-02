@@ -13,12 +13,12 @@ require('babel-polyfill');
  * @param {bool} value Thing you want to be proven
  * @returns {bool} If it is true or not
  */
-function isTrue(value) {
+var isTrue = function isTrue(value) {
   return !!value;
-} /**
-   * @copyright Leonard Techel, 2016
-   * @license MIT
-   */
+}; /**
+    * @copyright Leonard Techel, 2016
+    * @license MIT
+    */
 exports.default = isTrue;
 
 },{"babel-polyfill":2}],2:[function(require,module,exports){

@@ -10,8 +10,6 @@ import 'babel-polyfill';
  * @param {bool} value Thing you want to be proven
  * @returns {bool} If it is true or not
  */
-function isTrue(value) {
-  return !!value;
-}
+const isTrue = value => !!value;
 
 export default isTrue;
